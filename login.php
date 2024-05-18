@@ -26,7 +26,7 @@ header("refresh:5;url=index.html");
     <title>Login</title>
     <style>
         body {
-            background-color: #f0f0f0;
+            background-color: #ffffff;
         }
         .container {
             max-width: 400px;
@@ -59,6 +59,7 @@ header("refresh:5;url=index.html");
             cursor: pointer;
         }
         .message {
+            color:#f0f0f0
             margin-top: 20px;
             padding: 10px;
             background-color: #f2f2f2;
@@ -71,7 +72,7 @@ header("refresh:5;url=index.html");
     <div class="container">
         <?php
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
-            $expected_email = "example@example.com";
+            $expected_email = "emine.boluk@ogr.sakarya.edu.tr";
             $expected_password = "123456";
             $email = $_POST["email"];
             $password = $_POST["password"];
