@@ -1,41 +1,58 @@
+
+<?php
+header("refresh:5;url=index.html");
+?>
 <!DOCTYPE html>
 <html>
 <head>
     <title>İletişim</title>
     <style>
+   @import url('https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&family=Freeman&family=IM+Fell+English+SC&family=Jaro:opsz@6..72&family=Limelight&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&family=Freeman&family=IM+Fell+English+SC&family=Jaro:opsz@6..72&family=Limelight&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Ubuntu+Sans:ital,wdth,wght@0,83.1,482;1,83.1,482&display=swap');
         body {
-            font-family: Ubuntu, sans-serif;
+            font-family: "Jaro", sans-serif;
+            background-color: #f5f5f5;
         }
+        #table-container {
+    width: 40%;
+    margin: auto;
+}
         .table {
-            width: 100%;
-            margin-top: 200px;
+           text-align: center;
+            width: 100%;          
             border-collapse: collapse;
         }
         .table th, .table td {
+            text-align: center;
             border: 3px solid #ddd;
             padding: 8px;
         }
         .table th {
+            
             padding-top: 12px;
             padding-bottom: 12px;
-            text-align: left;
+            text-align:center;
             background-color: #4CAF50;
             color: white;
         }
         #basliklar {
             background-color: #f2f2f2;
         }
+        #baslik{
+            font-family: "Jaro", sans-serif;
+            font-size:35px;
+            text-align: center;
+            margin-top: 100px;
+            color:#e4e2b8f1; 
+        
+        }
 </style>
 </head>
 <body>
+    <h1 style="text-align: center; color:black;" id ="baslik">İletişim Bilgileriniz</h1>
+    <div id="table-container">
     <table class="table">
-        <thead class="table">
-            <tr>
-                <th colspan="5" id="basliklar">
-                    <h3>MESAJINIZ İLETİLDİ!</h3>
-                </th>
-            </tr>
-        </thead>
+        
         <tbody>
         <tr>
             <td id="basliklar">İsminiz</td>
@@ -123,11 +140,9 @@
 
 
 
-    </table>
+    </table></div>
 <br><br><br><br>
-<?php
-header("refresh:5;url=index.html");
-?>
+
   
 </body>
 </html>
